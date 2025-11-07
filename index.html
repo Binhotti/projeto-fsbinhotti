@@ -1,11 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>FS Binhotti</title>
+    <meta name="description" content="FS Binhotti oferece serviços de terraplanagem, locação de máquinas e venda de materiais para construção como brita, areia e pedras.">
     
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="standalone.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <h1 class="logo">FS Binhotti</h1>
+                <div class="nav-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#materiais">Materiais</a>
+                    <a href="#maquinas">Máquinas & Serviços</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#inicio" onclick="toggleMenu()">Início</a>
+        <a href="#materiais" onclick="toggleMenu()">Materiais</a>
+        <a href="#maquinas" onclick="toggleMenu()">Máquinas & Serviços</a>
+        <a href="#contato" onclick="toggleMenu()">Contato</a>
+    </div>
+
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">FS Binhotti</h1>
+            <p class="hero-subtitle">Terraplanagem e Materiais para Construção</p>
+            <p class="hero-description">
+                Fornecemos materiais de qualidade e serviços especializados de terraplanagem com máquinas modernas e equipe qualificada
+            </p>
+            <a href="#materiais" class="btn-primary">Conheça Nossos Produtos</a>
+        </div>
+    </section>
+
+    <section id="materiais" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Materiais</h2>
+                <p>Materiais de construção de alta qualidade para sua obra</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image"><img src="britado.jpg" alt="Britado"></div>
+                    <div class="card-content">
+                        <h3>Britado</h3>
+                        <span class="badge">m³</span>
+                        <p>Material britado de alta qualidade para base de construção e pavimentação</p>
+                        <div class="card-price">R$ 00,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="brita.jpg" alt="Brita"></div>
+                    <div class="card-content">
+                        <h3>Brita</h3>
+                        <span class="badge">m³</span>
+                        <p>Brita de diversos tamanhos para concreto e construção civil</p>
+                        <div class="card-price">R$ 00,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="pedrisco.jpg" alt="Pedrisco com Areia"></div>
+                    <div class="card-content">
+                        <h3>Pedrisco com Areia</h3>
+                        <span class="badge">m³</span>
+                        <p>Mistura ideal de pedrisco e areia para acabamentos e revestimentos</p>
+                        <div class="card-price">R$ 00,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="pedra-pulmao.jpg" alt="Pedra Pulmão"></div>
+                    <div class="card-content">
+                        <h3>Pedra Pulmão (Rachão)</h3>
+                        <span class="badge">m³</span>
+                        <p>Pedras grandes para contenção, drenagem e obras de grande porte</p>
+                        <div class="card-price">R$ 00,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="areia.jpg" alt="Areia"></div>
+                    <div class="card-content">
+                        <h3>Areia</h3>
+                        <span class="badge">m³</span>
+                        <p>Areia fina e grossa para construção, argamassa e concreto</p>
+                        <div class="card-price">R$ 00,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="barro.jpg" alt="Barro"></div>
+                    <div class="card-content">
+                        <h3>Barro</h3>
+                        <span class="badge">m³</span>
+                        <p>Barro de qualidade para aterros e nivelamento de terrenos</p>
+                        <div class="card-price">R$ 00,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="maquinas" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Máquinas & Serviços</h2>
+                <p>Equipamentos modernos e serviços especializados em terraplanagem</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image"><img src="escavadeira-hidraulica.jpg" alt="Escavadeira Hidráulica"></div>
+                    <div class="card-content">
+                        <h3>Escavadeira Hidráulica</h3>
+                        <span class="badge">hora</span>
+                        <p>Equipamento de grande porte para escavações profundas e movimentação de terra</p>
+                        <div class="card-price">R$ 000,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="mini-escavadeira.jpg" alt="Mini Escavadeira"></div>
+                    <div class="card-content">
+                        <h3>Mini Escavadeira</h3>
+                        <span class="badge">hora</span>
+                        <p>Ideal para trabalhos em espaços reduzidos e terrenos de difícil acesso</p>
+                        <div class="card-price">R$ 000,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="retroescavadeira.jpg" alt="Retroescavadeira"></div>
+                    <div class="card-content">
+                        <h3>Retroescavadeira</h3>
+                        <span class="badge">hora</span>
+                        <p>Máquina versátil para escavação, carga e transporte de materiais</p>
+                        <div class="card-price">R$ 000,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="mini-carregadeira.jpg" alt="Mini Carregadeira"></div>
+                    <div class="card-content">
+                        <h3>Mini Carregadeira</h3>
+                        <span class="badge">hora</span>
+                        <p>Compacta e eficiente para movimentação de materiais e limpeza</p>
+                        <div class="card-price">R$ 000,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="demolicao.jpg" alt="Demolição"></div>
+                    <div class="card-content">
+                        <h3>Demolição</h3>
+                        <span class="badge">m²</span>
+                        <p>Serviço completo de demolição com equipamentos especializados</p>
+                        <div class="card-price">R$ 000,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="limpeza.jpg" alt="Limpeza"></div>
+                    <div class="card-content">
+                        <h3>Limpeza</h3>
+                        <span class="badge">m²</span>
+                        <p>Limpeza e preparação de terrenos para construção</p>
+                        <div class="card-price">R$ 000,00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image"><img src="escavacao.jpg" alt="Escavação"></div>
+                    <div class="card-content">
+                        <h3>Escavação</h3>
+                        <span class="badge">m³</span>
+                        <p>Serviços de escavação para fundações e terraplenagem</p>
+                        <div class="card-price">R$ 000,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Solicite um orçamento sem compromisso</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3>Telefone</h3>
+                    <p>Ligue para nós</p>
+                    <a href="tel:+5511999999999" class="btn-outline">(11) 99999-9999</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Envie uma mensagem</p>
+                    <a href="mailto:contato@fsbinhotti.com.br" class="btn-outline">contato@fsbinhotti.com.br</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Localização</h3>
+                    <p>Atendemos toda a região</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-title">FS Binhotti Terraplanagem</p>
+            <p class="footer-text">© <span id="year"></span> Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
