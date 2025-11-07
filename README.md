@@ -2,17 +2,17 @@
 
 Bem-vindo ao repositório do **Projeto FS Binhotti**!
 
-## Descrição
+## 📝 Descrição
 
 Este projeto foi desenvolvido para a empresa **FS Binhoti Terraplanagem** com o objetivo de apresentar seus serviços de terraplanagem, locação de máquinas e venda de materiais para construção civil. O site oferece uma vitrine digital moderna, responsiva e de fácil navegação, permitindo que clientes conheçam os produtos, serviços e possam entrar em contato de forma prática.
 
-## Tecnologias Utilizadas
+## 🧑‍💻 Tecnologias Utilizadas
 
 - HTML
 - CSS
 - JavaScript
 
-## Como Executar
+## ⁉️ Como Executar
 
 1. Clone o repositório:
     ```bash
