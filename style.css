@@ -150,7 +150,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url('images/imagem-hero.png');
+  background-image: url('/images/imagem-hero.png');
   background-size: cover;
   background-position: center;
 }
