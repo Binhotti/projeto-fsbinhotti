@@ -7,12 +7,11 @@
   --color-border: hsl(35, 20%, 80%);
   --color-muted: hsl(35, 15%, 85%);
   --color-muted-foreground: hsl(25, 20%, 40%);
-  
-  /* Shadows */
+
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  
+
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
@@ -20,7 +19,7 @@
   --spacing-xl: 3rem;
   --spacing-2xl: 4rem;
   --spacing-3xl: 6rem;
-  
+
   --radius: 0.75rem;
 }
 
@@ -42,9 +41,9 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(241, 234, 227, 0.95);
+  background-color: var(--color-border);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-muted-foregrounde);
   z-index: 1000;
 }
 
@@ -57,8 +56,10 @@ body {
 
 .logo {
   font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   font-weight: bold;
-  color: var(--color-primary);
+  color: red;
 }
 
 .nav-links {
@@ -149,7 +150,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url('hero-terraplanagem.jpg');
+  background-image: url(/images/imagem-hero.png);
   background-size: cover;
   background-position: center;
 }
@@ -157,10 +158,10 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, 
-    rgba(46, 30, 20, 0.7), 
-    rgba(46, 30, 20, 0.5), 
-    rgba(241, 234, 227, 1));
+  background: linear-gradient(to bottom,
+      rgba(46, 30, 20, 0.7),
+      rgba(46, 30, 20, 0.5),
+      rgba(241, 234, 227, 1));
 }
 
 .hero-content {
@@ -173,9 +174,9 @@ body {
 .hero-title {
   font-size: 3rem;
   font-weight: bold;
-  color: white;
+  color: red;
   margin-bottom: 1.5rem;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 8px 12px rgba(0, 0, 0, 0.8);
 }
 
 .hero-subtitle {
@@ -201,9 +202,11 @@ body {
   .hero-title {
     font-size: 4.5rem;
   }
+
   .hero-subtitle {
     font-size: 2rem;
   }
+
   .hero-description {
     font-size: 1.25rem;
   }
@@ -211,7 +214,7 @@ body {
 
 .btn-primary {
   display: inline-block;
-  background-color: var(--color-primary);
+  background-color: red;
   color: white;
   padding: 1rem 2rem;
   border-radius: var(--radius);
@@ -299,7 +302,6 @@ body {
   }
 }
 
-/* Cards */
 .card {
   background-color: var(--color-card);
   border: 1px solid var(--color-border);
@@ -370,6 +372,7 @@ body {
 
 .contact-grid {
   display: grid;
+  align-items: start;
   grid-template-columns: 1fr;
   gap: 2rem;
   max-width: 80rem;
@@ -383,6 +386,10 @@ body {
 }
 
 .contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   background-color: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
@@ -441,6 +448,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -458,4 +466,10 @@ body {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 64px;
+}
+
+.mapa iframe {
+  height: 200px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
 }
